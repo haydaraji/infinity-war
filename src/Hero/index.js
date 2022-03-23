@@ -1,7 +1,5 @@
 import React from 'react';
-import {Draggable} from 'react-beautiful-dnd';
 import styled from 'styled-components';
-import './style.css';
 
 const Container = styled.div`
   border: 1px solid lightgrey;
@@ -14,17 +12,9 @@ const Container = styled.div`
 export default class Hero extends React.Component {
   render() {
     return (
-      <Draggable draggableId={this.props.hero.id} index={this.props.index}>
-        {provided => (
-          <Container
-            {...provided.draggableProps}
-            {...provided.dragHandleProps}
-            innerRef={provided.innerRef}
-          >
-            {this.props.hero.name}
-          </Container>
-        )}
-      </Draggable>
+      <Container>
+        {this.props.hero.name}
+      </Container>
     );
   }
 }
