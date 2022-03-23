@@ -32,19 +32,19 @@ const data = {
     'column-1': {
       id: 'column-1',
       title: "Heroes",
-      heroId: ['hero-1','hero-2','hero-3','hero-4','hero-5','hero-6','hero-7','hero-8','hero-9','hero-10','hero-11','hero-12','hero-13','hero-14','hero-15','hero-16','hero-17','hero-18','hero-19','hero-20','hero-21','hero-22','hero-23','hero-24','hero-25','hero-26','hero-27']
+      heroIds: ['hero-1','hero-2','hero-3','hero-4','hero-5','hero-6','hero-7','hero-8','hero-9','hero-10','hero-11','hero-12','hero-13','hero-14','hero-15','hero-16','hero-17','hero-18','hero-19','hero-20','hero-21','hero-22','hero-23','hero-24','hero-25','hero-26','hero-27']
     },
     'column-2': {
       id: 'column-2',
       title: 'Alive',
-      heroId: [],
+      heroIds: [],
     },
     'column-3': {
       id: 'column-3',
       title: 'Dead',
-      heroId: [],
+      heroIds: [],
     }
   },
-  columnsort: ['column-1', 'column-2', 'column-3']
+  columnsort: ['column-1', 'column-2', 'column-3'],
 }
 export default data;
